@@ -49,10 +49,10 @@ btnSorting.addEventListener('click', () => {
 
                 encontrou = true
 
-                saidaDados.innerHTML = (` o array foi (${array}) <br>
-                     posição do primeiro "${i}" com o valor "${array[i]}"<br>
-                     posição do segundo valor "${a}" com o valor "${array[a]}"<br>
-                     Alvo: ${alvo}<br>
+                saidaDados.innerHTML = (` O array sorteado foi (${array}) <br><br>
+                     posição do primeiro "${i}" com o valor "${array[i]}"<br><br>
+                     posição do segundo valor "${a}" com o valor "${array[a]}"<br><br>
+                     Alvo: ${alvo}<br><br>
                      Sua sorte hoje está em ${parseInt((1 / contador) * 100)}%`)
 
                 alert('Finalmente')
@@ -68,7 +68,7 @@ btnSorting.addEventListener('click', () => {
     if (encontrou == false) {
 
         saidaDados.innerHTML = (
-            `<br><strong>Não foi dessa vez! Tente novemente</strong><br>
+            `<br><strong>Não foi dessa vez! Tente novemente</strong><br><br>
             Numero do alvo é ${alvo}<br><br>
             A lista sorteada foi <stong>${array}</strong>`
         )
